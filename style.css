@@ -1,0 +1,142 @@
+.new-todo{
+
+    height: 70px;
+    padding: 16px 16px 16px 60px;
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    width: 100%;
+}
+h1{
+    font-size: 60px;
+    color: #f5c6cb;
+    margin-bottom: 30px;
+    padding:0 ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+li{
+    list-style: none;
+    position: relative;
+    height: 68px;
+}
+.view{
+    border-top:1px solid #333 ;
+    border-bottom: 1px solid #333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.view input.text{
+    padding-left: 20px;
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background: #fafafa;
+    border: none;
+    width: 50%;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+label{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.inp{
+    height: 30px;
+    width: 30px;
+}
+.inp:checked +.text{
+    text-decoration: line-through;
+    color: #5a6268;
+    opacity: 0.8;
+}
+span{
+    padding-left: 20px;
+}
+.view{
+    position: relative;
+}
+
+.destroy{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+}
+.destroy:before, .destroy:after {
+    position: absolute;
+    left: 5px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+    top: 0;
+}
+.destroy:before {
+    transform: rotate(45deg);
+}
+.destroy:after {
+    transform: rotate(-45deg);
+}
+.footer__todoFilter{
+    display: inline-flex;
+
+}
+.footer__todoFilter span{
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 5px;
+    border: 1px solid #fafafa;
+}
+.footer__todoFilter span.active{
+    border: 1px solid #491217;
+    color: green;
+}
+.footer__todoFilter span:hover{
+    color: green;
+}
+.footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    box-shadow: 8px 27px 89px 9px rgba(68, 68, 70, 0.15);
+    background: #fafafa;
+    border-radius: 10px;
+}
+.todo__elem{
+    display: block;
+}
+.footer__clear-btn{
+    visibility: hidden;
+    cursor: pointer;
+}
+.show__btn{
+    visibility: visible;
+    display: block;
+}

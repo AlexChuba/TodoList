@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+</head>
+<body>
+
+<div class="container">
+    <form action="#">
+        <div class="wrapper" id="app">
+            <h1 class="title__todo">Todos</h1>
+            <div class="header">
+                <input class="new-todo" placeholder="What needs to be done?" value="">
+            </div>
+            <section class="main">
+                <ul id="todo__list">
+
+                </ul>
+            </section>
+            <div class="footer">
+                <span class="footer__todoCount"></span>
+                <div class="footer__todoFilter"><span class="todoFilter__all flter__item active">All</span><span
+                        class="todoFilter__active flter__item">Active</span><span
+                        class="todoFilter__complited flter__item">Complited</span></div>
+                <div class="footer__clear">
+                    <span class="footer__clear-btn">Clear completed</span>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+
+
+<script src="script.js">
+</script>
+
+
+</body>
+</html>
